@@ -90,7 +90,7 @@ describe('Bananas', () => {
                 timestamp: updates[0].timestamp,
                 host: Os.hostname(),
                 tags: ['test', 'test2', 'bananas', 'initialized'],
-                env: JSON.parse(JSON.stringify(process.env))
+                // env: JSON.parse(JSON.stringify(process.env))
             },
             {
                 event: 'server',
@@ -100,7 +100,7 @@ describe('Bananas', () => {
             },
             {
                 event: 'error',
-                timestamp: updates[2].timestamp,
+                timestamp: updates[2].timestamp,options
                 host: Os.hostname(),
                 tags: ['test', 'test2'],
                 path: '/123/b/456',
